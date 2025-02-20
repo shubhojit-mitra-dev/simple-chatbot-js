@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Chatbot</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 text-gray-200 flex justify-center items-center h-screen">
+    <div class="w-full max-w-md bg-gray-800 rounded-lg shadow-lg flex flex-col h-5/6">
+        <div class="bg-gray-700 text-white p-4 text-center rounded-t-lg">
+            <h1 class="text-xl font-bold">Gemini Chatbot</h1>
+        </div>
+        <div class="flex-grow p-4 overflow-y-auto" id="chat-messages"></div>
+        <div class="p-4 bg-gray-700 flex">
+            <input type="text" id="user-input"
+                class="flex-grow p-2 rounded-l-lg bg-gray-600 text-white border-none focus:outline-none"
+                placeholder="Type your message...">
+            <button id="send-button" class="p-2 bg-blue-500 text-white rounded-r-lg hover:bg-blue-400">Send</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
